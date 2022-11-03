@@ -1,0 +1,3270 @@
+Using TensorFlow backend.
+WARNING: Logging before flag parsing goes to stderr.
+W0407 08:40:19.835094 140011329312576 deprecation_wrapper.py:119] From /appl/soft/ai/miniconda3/envs/tensorflow-1.14.0/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:517: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+W0407 08:40:19.912824 140011329312576 deprecation_wrapper.py:119] From /appl/soft/ai/miniconda3/envs/tensorflow-1.14.0/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:74: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+W0407 08:40:19.914197 140011329312576 deprecation_wrapper.py:119] From /appl/soft/ai/miniconda3/envs/tensorflow-1.14.0/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:4138: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+W0407 08:40:19.987245 140011329312576 deprecation_wrapper.py:119] From /appl/soft/ai/miniconda3/envs/tensorflow-1.14.0/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:133: The name tf.placeholder_with_default is deprecated. Please use tf.compat.v1.placeholder_with_default instead.
+
+W0407 08:40:20.002625 140011329312576 deprecation.py:506] From /appl/soft/ai/miniconda3/envs/tensorflow-1.14.0/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:3445: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+W0407 08:40:21.605668 140011329312576 deprecation_wrapper.py:119] From /appl/soft/ai/miniconda3/envs/tensorflow-1.14.0/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:174: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+2020-04-07 08:40:21.606030: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2020-04-07 08:40:21.650675: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2100000000 Hz
+2020-04-07 08:40:21.651364: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55ec586efdc0 executing computations on platform Host. Devices:
+2020-04-07 08:40:21.651395: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+2020-04-07 08:40:21.652802: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Could not dlopen library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /appl/opt/cluster_studio_xe2019/compilers_and_libraries_2019.4.243/linux/tbb/lib/intel64_lin/gcc4.7:/appl/opt/cluster_studio_xe2019/compilers_and_libraries_2019.4.243/linux/compiler/lib/intel64_lin:/appl/opt/cluster_studio_xe2019/compilers_and_libraries_2019.4.243/linux/mkl/lib/intel64_lin:/appl/spack/install-tree/intel-19.0.4/hpcx-mpi-2.4.0-keuon4/lib:/appl/opt/cluster_studio_xe2019/compilers_and_libraries_2019.4.243/linux/mpi/intel64/lib:/appl/opt/cluster_studio_xe2019/compilers_and_libraries_2019.4.243/linux/ipp/lib/intel64:/appl/opt/cluster_studio_xe2019/compilers_and_libraries_2019.4.243/linux/tbb/lib/intel64/gcc4.7:/appl/opt/cluster_studio_xe2019/debugger_2019/libipt/intel64/lib:/appl/opt/cluster_studio_xe2019/compilers_and_libraries_2019.4.243/linux/daal/lib/intel64_lin:/appl/opt/cluster_studio_xe2019/compilers_and_libraries_2019.4.243/linux/daal/../tbb/lib/intel64_lin/gcc4.4
+2020-04-07 08:40:21.652828: E tensorflow/stream_executor/cuda/cuda_driver.cc:318] failed call to cuInit: UNKNOWN ERROR (303)
+2020-04-07 08:40:21.664860: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (r01c39.bullx): /proc/driver/nvidia/version does not exist
+2020-04-07 08:40:22.324154: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1412] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
+W0407 08:40:22.604705 140011329312576 deprecation_wrapper.py:119] From /appl/soft/ai/miniconda3/envs/tensorflow-1.14.0/lib/python3.7/site-packages/keras/optimizers.py:790: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+W0407 08:40:22.610914 140011329312576 deprecation.py:323] From /appl/soft/ai/miniconda3/envs/tensorflow-1.14.0/lib/python3.7/site-packages/tensorflow/python/ops/nn_impl.py:180: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+W0407 08:40:26.332808 140011329312576 deprecation.py:573] From /appl/soft/ai/miniconda3/envs/tensorflow-1.14.0/lib/python3.7/site-packages/tensorflow/python/util/deprecation.py:507: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with distribution=normal is deprecated and will be removed in a future version.
+Instructions for updating:
+`normal` is a deprecated alias for `truncated_normal`
+W0407 08:40:26.333072 140011329312576 deprecation.py:506] From /appl/soft/ai/miniconda3/envs/tensorflow-1.14.0/lib/python3.7/site-packages/tensorflow/python/ops/init_ops.py:97: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+W0407 08:40:26.334476 140011329312576 deprecation.py:506] From /appl/soft/ai/miniconda3/envs/tensorflow-1.14.0/lib/python3.7/site-packages/tensorflow/python/ops/init_ops.py:97: calling Ones.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+W0407 08:40:26.338429 140011329312576 deprecation.py:506] From /appl/soft/ai/miniconda3/envs/tensorflow-1.14.0/lib/python3.7/site-packages/tensorflow/python/ops/init_ops.py:97: calling GlorotUniform.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+W0407 08:40:26.338571 140011329312576 deprecation.py:506] From /appl/soft/ai/miniconda3/envs/tensorflow-1.14.0/lib/python3.7/site-packages/tensorflow/python/ops/init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+A6250.mat
+A2892.mat
+A3173.mat
+A5131.mat
+A3696.mat
+A5505.mat
+A0106.mat
+A5168.mat
+A1242.mat
+A1481.mat
+A5286.mat
+A4571.mat
+A1981.mat
+A4605.mat
+A3903.mat
+A1704.mat
+A3194.mat
+A0303.mat
+A2492.mat
+A2080.mat
+A1155.mat
+A5708.mat
+A1023.mat
+A6273.mat
+A0219.mat
+A4752.mat
+A4205.mat
+A5514.mat
+A1029.mat
+A6663.mat
+A0205.mat
+A3300.mat
+A3917.mat
+A3274.mat
+A2645.mat
+A6165.mat
+A5140.mat
+A0355.mat
+A2411.mat
+A3199.mat
+A6235.mat
+A3950.mat
+A0278.mat
+A6677.mat
+A3038.mat
+A0666.mat
+A1475.mat
+A5403.mat
+A5100.mat
+A1525.mat
+A6825.mat
+A5823.mat
+A6836.mat
+A5281.mat
+A3545.mat
+A0665.mat
+A5510.mat
+A2665.mat
+A4144.mat
+A1845.mat
+A6833.mat
+A3699.mat
+A6229.mat
+A5707.mat
+A4549.mat
+A0462.mat
+A6068.mat
+A0740.mat
+A5611.mat
+A6715.mat
+A2990.mat
+A0094.mat
+A2654.mat
+A4753.mat
+A0131.mat
+A4856.mat
+A2498.mat
+A1825.mat
+A4411.mat
+A1287.mat
+A5957.mat
+A5120.mat
+A0609.mat
+A1713.mat
+A5061.mat
+A1972.mat
+A2327.mat
+A1599.mat
+A1567.mat
+A4670.mat
+A3583.mat
+A0855.mat
+A5659.mat
+A6737.mat
+A4759.mat
+A0551.mat
+A4247.mat
+A5845.mat
+A5676.mat
+A5163.mat
+A6239.mat
+A2243.mat
+A1570.mat
+A2095.mat
+A4414.mat
+A5900.mat
+A4022.mat
+A5231.mat
+A2132.mat
+A3460.mat
+A3296.mat
+A6731.mat
+A3215.mat
+A2322.mat
+A4148.mat
+A1566.mat
+A4894.mat
+A5698.mat
+A6639.mat
+A2841.mat
+A5379.mat
+A2978.mat
+A1171.mat
+A2323.mat
+A1321.mat
+A0479.mat
+A5911.mat
+A5215.mat
+A5333.mat
+A0902.mat
+A4689.mat
+A1686.mat
+A0247.mat
+A1509.mat
+A0268.mat
+A6021.mat
+A3313.mat
+A3370.mat
+A4940.mat
+A4598.mat
+A1148.mat
+A3345.mat
+A5292.mat
+A1057.mat
+A4106.mat
+A1007.mat
+A1417.mat
+A5517.mat
+A1284.mat
+A1351.mat
+A2609.mat
+A6459.mat
+A6355.mat
+A0409.mat
+A6374.mat
+A3368.mat
+A3363.mat
+A2135.mat
+A5634.mat
+A2612.mat
+A6513.mat
+A2794.mat
+A6550.mat
+A1738.mat
+A1867.mat
+A4531.mat
+A3673.mat
+A4174.mat
+A5684.mat
+A6452.mat
+A2639.mat
+A2060.mat
+A6058.mat
+A3530.mat
+A1683.mat
+A0821.mat
+A0390.mat
+A3007.mat
+A6496.mat
+A0016.mat
+A5290.mat
+A3153.mat
+A5522.mat
+A1008.mat
+A5336.mat
+A6000.mat
+A1676.mat
+A2276.mat
+A1607.mat
+A0927.mat
+A0402.mat
+A3115.mat
+A2210.mat
+A3146.mat
+A4398.mat
+A1236.mat
+A0427.mat
+A0497.mat
+A3272.mat
+A0582.mat
+A0761.mat
+A3116.mat
+A5837.mat
+A1218.mat
+A0271.mat
+A2235.mat
+A0084.mat
+A0951.mat
+A4344.mat
+A5393.mat
+A0861.mat
+A5114.mat
+A1105.mat
+A1233.mat
+A6387.mat
+A6308.mat
+A1132.mat
+A4139.mat
+A0619.mat
+A6290.mat
+A4150.mat
+A6673.mat
+A2027.mat
+A0071.mat
+A2062.mat
+A6762.mat
+A2972.mat
+A6506.mat
+A0701.mat
+A6754.mat
+A5354.mat
+A2362.mat
+A0948.mat
+A5159.mat
+A4837.mat
+A0138.mat
+A5416.mat
+A1345.mat
+A4036.mat
+A0414.mat
+A4723.mat
+A6812.mat
+A0796.mat
+A3177.mat
+A1543.mat
+A1842.mat
+A4668.mat
+A4473.mat
+A0480.mat
+A6862.mat
+A1174.mat
+A6618.mat
+A0076.mat
+A5430.mat
+A1558.mat
+A4826.mat
+A6067.mat
+A4846.mat
+A6375.mat
+A4286.mat
+A6146.mat
+A3686.mat
+A6518.mat
+A0697.mat
+A5321.mat
+A3851.mat
+A4086.mat
+A2440.mat
+A3214.mat
+A4425.mat
+A5296.mat
+A2799.mat
+A3307.mat
+A5371.mat
+A1185.mat
+A3920.mat
+A3238.mat
+A5929.mat
+A0377.mat
+A4225.mat
+A4609.mat
+A2572.mat
+A6714.mat
+A3568.mat
+A3132.mat
+A0723.mat
+A4071.mat
+A5470.mat
+A1058.mat
+A4333.mat
+A4758.mat
+A4451.mat
+A4681.mat
+A3087.mat
+A5776.mat
+A5452.mat
+A0008.mat
+A5014.mat
+A3878.mat
+A3972.mat
+A4939.mat
+A5189.mat
+A0534.mat
+A4210.mat
+A0515.mat
+A4402.mat
+A5955.mat
+A2641.mat
+A4760.mat
+A5750.mat
+A4498.mat
+A6800.mat
+A1985.mat
+A3654.mat
+A1295.mat
+A0735.mat
+A3465.mat
+A5843.mat
+A3825.mat
+A3304.mat
+A3380.mat
+A4121.mat
+A1456.mat
+A5592.mat
+A2499.mat
+A4781.mat
+A0021.mat
+A0548.mat
+A1360.mat
+A1925.mat
+A1261.mat
+A6191.mat
+A4870.mat
+A1729.mat
+A2298.mat
+A2200.mat
+A2467.mat
+A4322.mat
+A0266.mat
+A0872.mat
+A3605.mat
+A4420.mat
+A3118.mat
+A4348.mat
+A2532.mat
+A6801.mat
+A3679.mat
+A1973.mat
+A3868.mat
+A2707.mat
+A2873.mat
+A3206.mat
+A1957.mat
+A2405.mat
+A4627.mat
+A2228.mat
+A1341.mat
+A0461.mat
+A3800.mat
+A0059.mat
+A6699.mat
+A3855.mat
+A6530.mat
+A6340.mat
+A4166.mat
+A6253.mat
+A3968.mat
+A0241.mat
+A0517.mat
+A2281.mat
+A2340.mat
+A4978.mat
+A4442.mat
+A6594.mat
+A5031.mat
+A2934.mat
+A6484.mat
+A3323.mat
+A4551.mat
+A0648.mat
+A2044.mat
+A5488.mat
+A6411.mat
+A1735.mat
+A6672.mat
+A4329.mat
+A2382.mat
+A6361.mat
+A2221.mat
+A4590.mat
+A3079.mat
+A0482.mat
+A6356.mat
+A2706.mat
+A5150.mat
+A2991.mat
+A0730.mat
+A5548.mat
+A1081.mat
+A6018.mat
+A6773.mat
+A1952.mat
+A6645.mat
+A3697.mat
+A3113.mat
+A3532.mat
+A3029.mat
+A0893.mat
+A1523.mat
+A3209.mat
+A6788.mat
+A2944.mat
+A4281.mat
+A4155.mat
+A2692.mat
+A1131.mat
+A1637.mat
+A4655.mat
+A2394.mat
+A2400.mat
+A6860.mat
+A1435.mat
+A3730.mat
+A1911.mat
+A0195.mat
+A5381.mat
+A4896.mat
+A1387.mat
+A2050.mat
+A5636.mat
+A3904.mat
+A1094.mat
+A2194.mat
+A1516.mat
+A0396.mat
+A4676.mat
+A0213.mat
+A0168.mat
+A2829.mat
+A1160.mat
+A0324.mat
+A0747.mat
+A1818.mat
+A2504.mat
+A5555.mat
+A6523.mat
+A3667.mat
+A2230.mat
+A6692.mat
+A0613.mat
+A2422.mat
+A3410.mat
+A0041.mat
+A3065.mat
+A5547.mat
+A1503.mat
+A2795.mat
+A2329.mat
+A6539.mat
+A6439.mat
+A6667.mat
+A5525.mat
+A2591.mat
+A4731.mat
+A0782.mat
+A2635.mat
+A4807.mat
+A1837.mat
+A4600.mat
+A4221.mat
+A4527.mat
+A0198.mat
+A6650.mat
+A5903.mat
+A0610.mat
+A5221.mat
+A5580.mat
+A5247.mat
+A6572.mat
+A1701.mat
+A4248.mat
+A3738.mat
+A5712.mat
+A0771.mat
+A2582.mat
+A4795.mat
+A2503.mat
+A1189.mat
+A6216.mat
+A3195.mat
+A3874.mat
+A0091.mat
+A4078.mat
+A4990.mat
+A6201.mat
+A4912.mat
+A6143.mat
+A1871.mat
+A1969.mat
+A5873.mat
+A5053.mat
+A2975.mat
+A1963.mat
+A6024.mat
+A0531.mat
+A5574.mat
+A2883.mat
+A5266.mat
+A1887.mat
+A4394.mat
+A4908.mat
+A4513.mat
+A0904.mat
+A3985.mat
+A6716.mat
+A3511.mat
+A5841.mat
+A1789.mat
+A4089.mat
+A3367.mat
+A5473.mat
+A2759.mat
+A0840.mat
+A3632.mat
+A0474.mat
+A4486.mat
+A4616.mat
+A4592.mat
+A4911.mat
+A0415.mat
+A5679.mat
+A0326.mat
+A0508.mat
+A4995.mat
+A4821.mat
+A5211.mat
+A5694.mat
+A3285.mat
+A5408.mat
+A4981.mat
+A3518.mat
+A5167.mat
+A4733.mat
+A3665.mat
+A4928.mat
+A3613.mat
+A0906.mat
+A3762.mat
+A0301.mat
+A1897.mat
+A4285.mat
+A5174.mat
+A5432.mat
+A4365.mat
+A0310.mat
+A5169.mat
+A3790.mat
+A2510.mat
+A5826.mat
+A2655.mat
+A5089.mat
+A5426.mat
+A1011.mat
+A0564.mat
+A4024.mat
+A4347.mat
+A4079.mat
+A4178.mat
+A0081.mat
+A5801.mat
+A4013.mat
+A6588.mat
+A1767.mat
+A3923.mat
+A6316.mat
+A2615.mat
+A2209.mat
+A5526.mat
+A5870.mat
+A2393.mat
+A0454.mat
+A0992.mat
+A1051.mat
+A3773.mat
+A5149.mat
+A6749.mat
+A0611.mat
+A5407.mat
+A5885.mat
+A2197.mat
+A0221.mat
+A6455.mat
+A1485.mat
+A4578.mat
+A4920.mat
+A4058.mat
+A2867.mat
+A2608.mat
+A5656.mat
+A1507.mat
+A6727.mat
+A1618.mat
+A3967.mat
+A3378.mat
+A4083.mat
+A2857.mat
+A5489.mat
+A2092.mat
+A6457.mat
+A2414.mat
+A0316.mat
+A3893.mat
+A2170.mat
+A3417.mat
+A5667.mat
+A4576.mat
+A3055.mat
+A1363.mat
+A5042.mat
+A6109.mat
+A6745.mat
+A2787.mat
+A2520.mat
+A3757.mat
+A1521.mat
+A5889.mat
+A1042.mat
+A3273.mat
+A6507.mat
+A0062.mat
+A3765.mat
+A3722.mat
+A4259.mat
+A3928.mat
+A6044.mat
+A3591.mat
+A1688.mat
+A0993.mat
+A1041.mat
+A6083.mat
+A6119.mat
+A0491.mat
+A4299.mat
+A5892.mat
+A2911.mat
+A3988.mat
+A0067.mat
+A1786.mat
+A5044.mat
+A4082.mat
+A2244.mat
+A3660.mat
+A1571.mat
+A1843.mat
+A2373.mat
+A3128.mat
+A4569.mat
+A1264.mat
+A6641.mat
+A2090.mat
+A3764.mat
+A3279.mat
+A1662.mat
+A6270.mat
+A0800.mat
+A4279.mat
+A5860.mat
+A3870.mat
+A6079.mat
+A6090.mat
+A2231.mat
+A4809.mat
+A4293.mat
+A5996.mat
+A4700.mat
+A0220.mat
+A4267.mat
+A6583.mat
+A2747.mat
+A0437.mat
+A1947.mat
+A2126.mat
+A5291.mat
+A5501.mat
+A0879.mat
+A2819.mat
+A1532.mat
+A4637.mat
+A5700.mat
+A3750.mat
+A4975.mat
+A1121.mat
+A6586.mat
+A6207.mat
+A4827.mat
+A4814.mat
+A4306.mat
+A3387.mat
+A0349.mat
+A4702.mat
+A6546.mat
+A5348.mat
+A5571.mat
+A1822.mat
+A4254.mat
+A2756.mat
+A3242.mat
+A4149.mat
+A3820.mat
+A5440.mat
+A0616.mat
+A0547.mat
+A2125.mat
+A1773.mat
+A1214.mat
+A4273.mat
+A6611.mat
+A4032.mat
+A6855.mat
+A4793.mat
+A1741.mat
+A5390.mat
+A2831.mat
+A2884.mat
+A4595.mat
+A1634.mat
+A6026.mat
+A1369.mat
+A5326.mat
+A1933.mat
+A1182.mat
+A5319.mat
+A6596.mat
+A5588.mat
+A5405.mat
+A4918.mat
+A5254.mat
+A3933.mat
+A3614.mat
+A2684.mat
+A1660.mat
+A4875.mat
+A2486.mat
+A5701.mat
+A5200.mat
+A0995.mat
+A3084.mat
+A5616.mat
+A1546.mat
+A4961.mat
+A3234.mat
+A1962.mat
+A2846.mat
+A0294.mat
+A1120.mat
+A2341.mat
+A6437.mat
+A1031.mat
+A1275.mat
+A0400.mat
+A3873.mat
+A3981.mat
+A2094.mat
+A1063.mat
+A1126.mat
+A4782.mat
+A1323.mat
+A4020.mat
+A0887.mat
+A3692.mat
+A5391.mat
+A6582.mat
+A3473.mat
+A3440.mat
+A3656.mat
+A3886.mat
+A0448.mat
+A5906.mat
+A5960.mat
+A1046.mat
+A4265.mat
+A5000.mat
+A6365.mat
+A5397.mat
+A4192.mat
+A4317.mat
+A2800.mat
+A3111.mat
+A2117.mat
+A1080.mat
+A4002.mat
+A5534.mat
+A2997.mat
+A0614.mat
+A5682.mat
+A5539.mat
+A4751.mat
+A3862.mat
+A6407.mat
+A1096.mat
+A1674.mat
+A4067.mat
+A4589.mat
+A4883.mat
+A1814.mat
+A3849.mat
+A6433.mat
+A4693.mat
+A2346.mat
+A4563.mat
+A2363.mat
+A2621.mat
+A2969.mat
+A5830.mat
+A1774.mat
+A4087.mat
+A1990.mat
+A0440.mat
+A3284.mat
+A3604.mat
+A3725.mat
+A3653.mat
+A3597.mat
+A3257.mat
+A1728.mat
+A0712.mat
+A1776.mat
+A3812.mat
+A0541.mat
+A5812.mat
+A4930.mat
+A2294.mat
+A6066.mat
+A3521.mat
+A3217.mat
+A1784.mat
+A6076.mat
+A5406.mat
+A4744.mat
+A2802.mat
+A4462.mat
+A4433.mat
+A1210.mat
+A2267.mat
+A6857.mat
+A6357.mat
+A0291.mat
+A5952.mat
+A2108.mat
+A1347.mat
+A1198.mat
+A1336.mat
+A0417.mat
+A2493.mat
+A0967.mat
+A3278.mat
+A2808.mat
+A0178.mat
+A5602.mat
+A4195.mat
+A4662.mat
+A0157.mat
+A6707.mat
+A5664.mat
+A0077.mat
+A4369.mat
+A2022.mat
+A0956.mat
+A6760.mat
+A0986.mat
+A5720.mat
+A6877.mat
+A0475.mat
+A3126.mat
+A2438.mat
+A1209.mat
+A5471.mat
+A0055.mat
+A4194.mat
+A3037.mat
+A1436.mat
+A3934.mat
+A4506.mat
+A2354.mat
+A2304.mat
+A6199.mat
+A2536.mat
+A0660.mat
+A6493.mat
+A5811.mat
+A2942.mat
+A0977.mat
+A0588.mat
+A1696.mat
+A3322.mat
+A0207.mat
+A1179.mat
+A5655.mat
+A1994.mat
+A0955.mat
+A1208.mat
+A1730.mat
+A0246.mat
+A6211.mat
+A1953.mat
+A1959.mat
+A5663.mat
+A2818.mat
+A5067.mat
+A0063.mat
+A6522.mat
+A5670.mat
+A0790.mat
+A1718.mat
+A3358.mat
+A4059.mat
+A0994.mat
+A6266.mat
+A1626.mat
+A0850.mat
+A2148.mat
+A4745.mat
+A5389.mat
+A2936.mat
+A0935.mat
+A0261.mat
+A0082.mat
+A6858.mat
+A1560.mat
+A1205.mat
+A3940.mat
+A6841.mat
+A1966.mat
+A2726.mat
+A6784.mat
+A1690.mat
+A0646.mat
+A6495.mat
+A5441.mat
+A4677.mat
+A0682.mat
+A2994.mat
+A2916.mat
+A3830.mat
+A0784.mat
+A0256.mat
+A0837.mat
+A5907.mat
+A6404.mat
+A3290.mat
+A0358.mat
+A5764.mat
+A3706.mat
+A2364.mat
+A1663.mat
+A1782.mat
+A6037.mat
+A6730.mat
+A0239.mat
+A2084.mat
+A6435.mat
+A2904.mat
+A1234.mat
+A0079.mat
+A2018.mat
+A3602.mat
+A3704.mat
+A1062.mat
+A1813.mat
+A3441.mat
+A0306.mat
+A3061.mat
+A1433.mat
+A4189.mat
+A0773.mat
+A6163.mat
+A3684.mat
+A1884.mat
+A2980.mat
+A5896.mat
+A1221.mat
+A2986.mat
+A0344.mat
+A1299.mat
+A6703.mat
+A1469.mat
+A3086.mat
+A3407.mat
+A3263.mat
+A2809.mat
+A0631.mat
+A0386.mat
+A4709.mat
+A6659.mat
+A0851.mat
+A5277.mat
+A5315.mat
+A0644.mat
+A1614.mat
+A1392.mat
+A6850.mat
+A5347.mat
+A1931.mat
+A0181.mat
+A0066.mat
+A5506.mat
+A2852.mat
+A0141.mat
+A3392.mat
+A5970.mat
+A1223.mat
+A1831.mat
+A6237.mat
+A4649.mat
+A5861.mat
+A3150.mat
+A2698.mat
+A1477.mat
+A1153.mat
+A3331.mat
+A5877.mat
+A2066.mat
+A3404.mat
+A5920.mat
+A6103.mat
+A1298.mat
+A5721.mat
+A5763.mat
+A5523.mat
+A3553.mat
+A4951.mat
+A6064.mat
+A5600.mat
+A1124.mat
+A0719.mat
+A4045.mat
+A2141.mat
+A6092.mat
+A6466.mat
+A2502.mat
+A6798.mat
+A1346.mat
+A3565.mat
+A1764.mat
+A2881.mat
+A1915.mat
+A2353.mat
+A1905.mat
+A2704.mat
+A4929.mat
+A1783.mat
+A4617.mat
+A0150.mat
+A0342.mat
+A3960.mat
+A5105.mat
+A4553.mat
+A4651.mat
+A2627.mat
+A1184.mat
+A6576.mat
+A4919.mat
+A5418.mat
+A1803.mat
+A4092.mat
+A5399.mat
+A2669.mat
+A6124.mat
+A4639.mat
+A1277.mat
+A1376.mat
+A4069.mat
+A0965.mat
+A4264.mat
+A2491.mat
+A5855.mat
+A0827.mat
+A5359.mat
+A5184.mat
+A4562.mat
+A2709.mat
+A4739.mat
+A5782.mat
+A5176.mat
+A6364.mat
+A4251.mat
+A3769.mat
+A0192.mat
+A4426.mat
+A5445.mat
+A1197.mat
+A0286.mat
+A1088.mat
+A0254.mat
+A2082.mat
+A2632.mat
+A5884.mat
+A5943.mat
+A5073.mat
+A0595.mat
+A3482.mat
+A4193.mat
+A1368.mat
+A1243.mat
+A5964.mat
+A3601.mat
+A4567.mat
+A6352.mat
+A3817.mat
+A0736.mat
+A1428.mat
+A3589.mat
+A0036.mat
+A5229.mat
+A1982.mat
+A1159.mat
+A4525.mat
+A0876.mat
+A6275.mat
+A2958.mat
+A2683.mat
+A2312.mat
+A6432.mat
+A5420.mat
+A2386.mat
+A3980.mat
+A2686.mat
+A5631.mat
+A1542.mat
+A3523.mat
+A3630.mat
+A5033.mat
+A0038.mat
+A0290.mat
+A1407.mat
+A4367.mat
+A0193.mat
+A3913.mat
+A3442.mat
+A6060.mat
+A2840.mat
+A3023.mat
+A2258.mat
+A1492.mat
+A6605.mat
+A2836.mat
+A1045.mat
+A0639.mat
+A6156.mat
+A2834.mat
+A3298.mat
+A5995.mat
+A5756.mat
+A1502.mat
+A6787.mat
+A6182.mat
+A6528.mat
+A6392.mat
+A2163.mat
+A4831.mat
+A1380.mat
+A3335.mat
+A5968.mat
+A6280.mat
+A4632.mat
+A6654.mat
+A1967.mat
+A4868.mat
+A5217.mat
+A0200.mat
+A0676.mat
+A1518.mat
+A0583.mat
+A2261.mat
+A3541.mat
+A3421.mat
+A2728.mat
+A3740.mat
+A0242.mat
+A6424.mat
+A0928.mat
+A0829.mat
+A6503.mat
+A0702.mat
+A3924.mat
+A2396.mat
+A5361.mat
+A2584.mat
+A6710.mat
+A1183.mat
+A2720.mat
+A5343.mat
+A3003.mat
+A4980.mat
+A4712.mat
+A6728.mat
+A4741.mat
+A2289.mat
+A6701.mat
+A5351.mat
+A6679.mat
+A3995.mat
+A1213.mat
+A2862.mat
+A6245.mat
+A6118.mat
+A0934.mat
+A2723.mat
+A5278.mat
+A5074.mat
+A1227.mat
+A2211.mat
+A2727.mat
+A5128.mat
+A3192.mat
+A4659.mat
+A0332.mat
+A0318.mat
+A6114.mat
+A2649.mat
+A4161.mat
+A6629.mat
+A3826.mat
+A4493.mat
+A1180.mat
+A4812.mat
+A3170.mat
+A1065.mat
+A6299.mat
+A4054.mat
+A0802.mat
+A3179.mat
+A6453.mat
+A3638.mat
+A0421.mat
+A3965.mat
+A0419.mat
+A3010.mat
+A3575.mat
+A6835.mat
+A6181.mat
+A1556.mat
+A6725.mat
+A3792.mat
+A6309.mat
+A5999.mat
+A1848.mat
+A3210.mat
+A5799.mat
+A0766.mat
+A3806.mat
+A6732.mat
+A5654.mat
+A5561.mat
+A5158.mat
+A2179.mat
+A5589.mat
+A2282.mat
+A4326.mat
+A0817.mat
+A1473.mat
+A2013.mat
+A4480.mat
+A1717.mat
+A6141.mat
+A2905.mat
+A5949.mat
+A5183.mat
+A1482.mat
+A0337.mat
+A6034.mat
+A2237.mat
+A0737.mat
+A5239.mat
+A4487.mat
+A3098.mat
+A5806.mat
+A5856.mat
+A0762.mat
+A2226.mat
+A6625.mat
+A2917.mat
+A1992.mat
+A4356.mat
+A2837.mat
+A4786.mat
+A0929.mat
+A1047.mat
+A6792.mat
+A2932.mat
+A6391.mat
+A5155.mat
+A0720.mat
+A2995.mat
+A6012.mat
+A5944.mat
+A4718.mat
+A1452.mat
+A6797.mat
+A0574.mat
+A6632.mat
+A0576.mat
+A1434.mat
+A6050.mat
+A1334.mat
+A3563.mat
+A0087.mat
+A1529.mat
+A2316.mat
+A4505.mat
+A3472.mat
+A0688.mat
+A2807.mat
+A2048.mat
+A5331.mat
+A1642.mat
+A1832.mat
+A5284.mat
+A3182.mat
+A3479.mat
+A0033.mat
+A5564.mat
+A5260.mat
+A4801.mat
+A4794.mat
+A3766.mat
+A5554.mat
+A0568.mat
+A4902.mat
+A5958.mat
+A2533.mat
+A2652.mat
+A1997.mat
+A5559.mat
+A6305.mat
+A6468.mat
+A3075.mat
+A6292.mat
+A5876.mat
+A4103.mat
+A5345.mat
+A0552.mat
+A0395.mat
+A5439.mat
+A5810.mat
+A5257.mat
+A2589.mat
+A2239.mat
+A2089.mat
+A1377.mat
+A0727.mat
+A0608.mat
+A3737.mat
+A2702.mat
+A5765.mat
+A6169.mat
+A6105.mat
+A3020.mat
+A4390.mat
+A2853.mat
+A1048.mat
+A0127.mat
+A0563.mat
+A0810.mat
+A2941.mat
+A4182.mat
+A2196.mat
+A0543.mat
+A2710.mat
+A5248.mat
+A2086.mat
+A5638.mat
+A5599.mat
+A0498.mat
+A0176.mat
+A6441.mat
+A5440.hea
+A3075.hea
+A3923.hea
+A5837.hea
+A5810.hea
+A0474.hea
+A5517.hea
+A3722.hea
+A5856.hea
+A5432.hea
+A5105.hea
+A1663.hea
+A1728.hea
+A6067.hea
+A3115.hea
+A2125.hea
+A1321.hea
+A3098.hea
+A0887.hea
+A1473.hea
+A1189.hea
+A0271.hea
+A4251.hea
+A4369.hea
+A3087.hea
+A5315.hea
+A1029.hea
+A0665.hea
+A0829.hea
+A0541.hea
+A6632.hea
+A3849.hea
+A6437.hea
+A0727.hea
+A5397.hea
+A1208.hea
+A2582.hea
+A0850.hea
+A1105.hea
+A2340.hea
+A4247.hea
+A5580.hea
+A1696.hea
+A5756.hea
+A2917.hea
+A4103.hea
+A0482.hea
+A1570.hea
+A4013.hea
+A3296.hea
+A3812.hea
+A0800.hea
+A1618.hea
+A3410.hea
+A3038.hea
+A3614.hea
+A1213.hea
+A0157.hea
+A4793.hea
+A5074.hea
+A6760.hea
+A1822.hea
+A0747.hea
+A5654.hea
+A6407.hea
+A5354.hea
+A4402.hea
+A3367.hea
+A6833.hea
+A6546.hea
+A5321.hea
+A6762.hea
+A1209.hea
+A3055.hea
+A0091.hea
+A4264.hea
+A4961.hea
+A5670.hea
+A5399.hea
+A1825.hea
+A6119.hea
+A6435.hea
+A1529.hea
+A5114.hea
+A1767.hea
+A5698.hea
+A6357.hea
+A2312.hea
+A1783.hea
+A3358.hea
+A4676.hea
+A0349.hea
+A4285.hea
+A2013.hea
+A5799.hea
+A0837.hea
+A2126.hea
+A1931.hea
+A5452.hea
+A4322.hea
+A0294.hea
+A4493.hea
+A5684.hea
+A3206.hea
+A5664.hea
+A1159.hea
+A0205.hea
+A1814.hea
+A2132.hea
+A2997.hea
+A0077.hea
+A1287.hea
+A5390.hea
+A2649.hea
+A2794.hea
+A5636.hea
+A4919.hea
+A4651.hea
+A3740.hea
+A2493.hea
+A1347.hea
+A2836.hea
+A6452.hea
+A5140.hea
+A2834.hea
+A0773.hea
+A4194.hea
+A3630.hea
+A6495.hea
+A0574.hea
+A2179.hea
+A5284.hea
+A6199.hea
+A6812.hea
+A0131.hea
+A0771.hea
+A6773.hea
+A2135.hea
+A2066.hea
+A2298.hea
+A0977.hea
+A1023.hea
+A5391.hea
+A6239.hea
+A5944.hea
+A2932.hea
+A2363.hea
+A1346.hea
+A4693.hea
+A1062.hea
+A0127.hea
+A3605.hea
+A0934.hea
+A0993.hea
+A0396.hea
+A2354.hea
+A2978.hea
+A5592.hea
+A2728.hea
+A1729.hea
+A5371.hea
+A2654.hea
+A1392.hea
+A4433.hea
+A5559.hea
+A1789.hea
+A2591.hea
+A1227.hea
+A6496.hea
+A2916.hea
+A3589.hea
+A4155.hea
+A3826.hea
+A5957.hea
+A0784.hea
+A5534.hea
+A4883.hea
+A4668.hea
+A6618.hea
+A3532.hea
+A0291.hea
+A6857.hea
+A0286.hea
+A6835.hea
+A0616.hea
+A2639.hea
+A0290.hea
+A1218.hea
+A2289.hea
+A4689.hea
+A4553.hea
+A6629.hea
+A4348.hea
+A5278.hea
+A4723.hea
+A6365.hea
+A4617.hea
+A0723.hea
+A1492.hea
+A1323.hea
+A4002.hea
+A0221.hea
+A4569.hea
+A4506.hea
+A5611.hea
+A6201.hea
+A4745.hea
+A6060.hea
+A5845.hea
+A2235.hea
+A3118.hea
+A2818.hea
+A3541.hea
+A6058.hea
+A4739.hea
+A5168.hea
+A4166.hea
+A3473.hea
+A6356.hea
+A5861.hea
+A3706.hea
+A2082.hea
+A4980.hea
+A2228.hea
+A5100.hea
+A0344.hea
+A1126.hea
+A0648.hea
+A5348.hea
+A2873.hea
+A3597.hea
+A5949.hea
+A2726.hea
+A3146.hea
+A1947.hea
+A0508.hea
+A1417.hea
+A5290.hea
+A3215.hea
+A3217.hea
+A4655.hea
+A3601.hea
+A2991.hea
+A1045.hea
+A6699.hea
+A1997.hea
+A2720.hea
+A0141.hea
+A2044.hea
+A2652.hea
+A4144.hea
+A2884.hea
+A1933.hea
+A1046.hea
+A1183.hea
+A4193.hea
+A5638.hea
+A2986.hea
+A2934.hea
+A1180.hea
+A0303.hea
+A6862.hea
+A3170.hea
+A4592.hea
+A3757.hea
+A0740.hea
+A2499.hea
+A3981.hea
+A4712.hea
+A3345.hea
+A5701.hea
+A5812.hea
+A0666.hea
+A4022.hea
+A1482.hea
+A0316.hea
+A6731.hea
+A1660.hea
+A2692.hea
+A6361.hea
+A4549.hea
+A2846.hea
+A6797.hea
+A3660.hea
+A4908.hea
+A4426.hea
+A0016.hea
+A1094.hea
+A1803.hea
+A2022.hea
+A6182.hea
+A6801.hea
+A0563.hea
+A5286.hea
+A5663.hea
+A3933.hea
+A1469.hea
+A0324.hea
+A3020.hea
+A3665.hea
+A0631.hea
+A5588.hea
+A2405.hea
+A6530.hea
+A3442.hea
+A2532.hea
+A2747.hea
+A0588.hea
+A1985.hea
+A3407.hea
+A1048.hea
+A5418.hea
+A2819.hea
+A6679.hea
+A6076.hea
+A5403.hea
+A4781.hea
+A0935.hea
+A3917.hea
+A3874.hea
+A4807.hea
+A0427.hea
+A3967.hea
+A6730.hea
+A3893.hea
+A6245.hea
+A3518.hea
+A6037.hea
+A1683.hea
+A4265.hea
+A5526.hea
+A2710.hea
+A2911.hea
+A5239.hea
+A6792.hea
+A3704.hea
+A4930.hea
+A5876.hea
+A4894.hea
+A5907.hea
+A5159.hea
+A4567.hea
+A1299.hea
+A6522.hea
+A0876.hea
+A3697.hea
+A1051.hea
+A2194.hea
+A1198.hea
+A2411.hea
+A0219.hea
+A6229.hea
+A1982.hea
+A4221.hea
+A3591.hea
+A3003.hea
+A5489.hea
+A5319.hea
+A2684.hea
+A4020.hea
+A1007.hea
+A4896.hea
+A1774.hea
+A1221.hea
+A6732.hea
+A4846.hea
+A3273.hea
+A2572.hea
+A0337.hea
+A3985.hea
+A3199.hea
+A1363.hea
+A5257.hea
+A2386.hea
+A6582.hea
+A6441.hea
+A3965.hea
+A2612.hea
+A3290.hea
+A0552.hea
+A6457.hea
+A0278.hea
+A6404.hea
+A5514.hea
+A2089.hea
+A0893.hea
+A5000.hea
+A4267.hea
+A6163.hea
+A0531.hea
+A0821.hea
+A0062.hea
+A4912.hea
+A4273.hea
+A2373.hea
+A1973.hea
+A3654.hea
+A1155.hea
+A3257.hea
+A2905.hea
+A0929.hea
+A2422.hea
+A1436.hea
+A4225.hea
+A5281.hea
+A2536.hea
+A3563.hea
+A3980.hea
+A3479.hea
+A0400.hea
+A4248.hea
+A6654.hea
+A1334.hea
+A4317.hea
+A6860.hea
+A2141.hea
+A4752.hea
+A1925.hea
+A4513.hea
+A2589.hea
+A5877.hea
+A0059.hea
+A0076.hea
+A1058.hea
+A4089.hea
+A5089.hea
+A1376.hea
+A5884.hea
+A1502.hea
+A0730.hea
+A0595.hea
+A1674.hea
+A2316.hea
+A5589.hea
+A1730.hea
+A1377.hea
+A5211.hea
+A5667.hea
+A0079.hea
+A2018.hea
+A0063.hea
+A4425.hea
+A2800.hea
+A2267.hea
+A2809.hea
+A6156.hea
+A5067.hea
+A1542.hea
+A5600.hea
+A1717.hea
+A1566.hea
+A0688.hea
+A2995.hea
+A6433.hea
+A3830.hea
+A5359.hea
+A5331.hea
+A1690.hea
+A6784.hea
+A1972.hea
+A1485.hea
+A3656.hea
+A6716.hea
+A3653.hea
+A6714.hea
+A1435.hea
+A3995.hea
+A6850.hea
+A0802.hea
+A4205.hea
+A0956.hea
+A5473.hea
+A2944.hea
+A4627.hea
+A5266.hea
+A3903.hea
+A3523.hea
+A5920.hea
+A1831.hea
+A0342.hea
+A0660.hea
+A2504.hea
+A4589.hea
+A3667.hea
+A4367.hea
+A4420.hea
+A0851.hea
+A5231.hea
+A4744.hea
+A4911.hea
+A1236.hea
+A5870.hea
+A2163.hea
+A2533.hea
+A5776.hea
+A5952.hea
+A1057.hea
+A0417.hea
+A5326.hea
+A4590.hea
+A5277.hea
+A5389.hea
+A3194.hea
+A3010.hea
+A4821.hea
+A0419.hea
+A2327.hea
+A6181.hea
+A2980.hea
+A4531.hea
+A4178.hea
+A2084.hea
+A3934.hea
+A3392.hea
+A4995.hea
+A2095.hea
+A1567.hea
+A2706.hea
+A2197.hea
+A1688.hea
+A3773.hea
+A4563.hea
+A2829.hea
+A0619.hea
+A3950.hea
+A0178.hea
+A1171.hea
+A5943.hea
+A5826.hea
+A2353.hea
+A5958.hea
+A1558.hea
+A1210.hea
+A6650.hea
+A2635.hea
+A3116.hea
+A6672.hea
+A4677.hea
+A2492.hea
+A6299.hea
+A2808.hea
+A1848.hea
+A5561.hea
+A2364.hea
+A5964.hea
+A5700.hea
+A3132.hea
+A1509.hea
+A6692.hea
+A5801.hea
+A6641.hea
+A2936.hea
+A4856.hea
+A2282.hea
+A6355.hea
+A2615.hea
+A1096.hea
+A1773.hea
+A2323.hea
+A2294.hea
+A2200.hea
+A0386.hea
+A5073.hea
+A1516.hea
+A4259.hea
+A2795.hea
+A4442.hea
+A1407.hea
+A6800.hea
+A1994.hea
+A1614.hea
+A6432.hea
+A5960.hea
+A6290.hea
+A1843.hea
+A1704.hea
+A0390.hea
+A6114.hea
+A2382.hea
+A2209.hea
+A0790.hea
+A4326.hea
+A5345.hea
+A6270.hea
+A4758.hea
+A5221.hea
+A1298.hea
+A5655.hea
+A0948.hea
+A3873.hea
+A5420.hea
+A5501.hea
+A1481.hea
+A5996.hea
+A5707.hea
+A2486.hea
+A4398.hea
+A2707.hea
+A6466.hea
+A6391.hea
+A1546.hea
+A0498.hea
+A6459.hea
+A3855.hea
+A5406.hea
+A1507.hea
+A6411.hea
+A5885.hea
+A6109.hea
+A0955.hea
+A1784.hea
+A1701.hea
+A0421.hea
+A2329.hea
+A6165.hea
+A6506.hea
+A5843.hea
+A5183.hea
+A4868.hea
+A4595.hea
+A1120.hea
+A1360.hea
+A3699.hea
+A2904.hea
+A6572.hea
+A2641.hea
+A4929.hea
+A6586.hea
+A2799.hea
+A3210.hea
+A0071.hea
+A3602.hea
+A3868.hea
+A1969.hea
+A2092.hea
+A4920.hea
+A5044.hea
+A5131.hea
+A3111.hea
+A1205.hea
+A1124.hea
+A1911.hea
+A5215.hea
+A1634.hea
+A5968.hea
+A5599.hea
+A0247.hea
+A3465.hea
+A5408.hea
+A2787.hea
+A1532.hea
+A5631.hea
+A4079.hea
+A5163.hea
+A0576.hea
+A6677.hea
+A4390.hea
+A0448.hea
+A6387.hea
+A3972.hea
+A5782.hea
+A2645.hea
+A5510.hea
+A0192.hea
+A6374.hea
+A0480.hea
+A1065.hea
+A5505.hea
+A0301.hea
+A3575.hea
+A3679.hea
+A2258.hea
+A1041.hea
+A0564.hea
+A2837.hea
+A6518.hea
+A3214.hea
+A2990.hea
+A0697.hea
+A1261.hea
+A1897.hea
+A4576.hea
+A6707.hea
+A2281.hea
+A0358.hea
+A0193.hea
+A1764.hea
+A6663.hea
+A5571.hea
+A5522.hea
+A0928.hea
+A3179.hea
+A0609.hea
+A4254.hea
+A5806.hea
+A5970.hea
+A3421.hea
+A0461.hea
+A5830.hea
+A2322.hea
+A6066.hea
+A3604.hea
+A6596.hea
+A2396.hea
+A0008.hea
+A6468.hea
+A3368.hea
+A6050.hea
+A0475.hea
+A6583.hea
+A1518.hea
+A2759.hea
+A6576.hea
+A3765.hea
+A5712.hea
+A6392.hea
+A0902.hea
+A6728.hea
+A4616.hea
+A4329.hea
+A4505.hea
+A3113.hea
+A1223.hea
+A3387.hea
+A0318.hea
+A2362.hea
+A2608.hea
+A1031.hea
+A6090.hea
+A1179.hea
+A3284.hea
+A3920.hea
+A1560.hea
+A1837.hea
+A4759.hea
+A0861.hea
+A0736.hea
+A6855.hea
+A4812.hea
+A4801.hea
+A3851.hea
+A0855.hea
+A0261.hea
+A4086.hea
+A0181.hea
+A1718.hea
+A5292.hea
+A0176.hea
+A6064.hea
+A4121.hea
+A4069.hea
+A4356.hea
+A2050.hea
+A1953.hea
+A6611.hea
+A0817.hea
+A3960.hea
+A0992.hea
+A5764.hea
+A6375.hea
+A0766.hea
+A5471.hea
+A4681.hea
+A2510.hea
+A4306.hea
+A1662.hea
+A4649.hea
+A3298.hea
+A6235.hea
+A2807.hea
+A2756.hea
+A2831.hea
+A5416.hea
+A6787.hea
+A0402.hea
+A1523.hea
+A1571.hea
+A6250.hea
+A4473.hea
+A4106.hea
+A5896.hea
+A6659.hea
+A4975.hea
+A3565.hea
+A3061.hea
+A6749.hea
+A2170.hea
+A4480.hea
+A6364.hea
+A3820.hea
+A1786.hea
+A5823.hea
+A0534.hea
+A4826.hea
+A1369.hea
+A5260.hea
+A1433.hea
+A4161.hea
+A1966.hea
+A3806.hea
+A2304.hea
+A0310.hea
+A6745.hea
+A1637.hea
+A5911.hea
+A6493.hea
+A4981.hea
+A5860.hea
+A0568.hea
+A1368.hea
+A4794.hea
+A2942.hea
+A0055.hea
+A0082.hea
+A4486.hea
+A1434.hea
+A2686.hea
+A4659.hea
+A5750.hea
+A1295.hea
+A2440.hea
+A1957.hea
+A3150.hea
+A1088.hea
+A2108.hea
+A3023.hea
+A4632.hea
+A5333.hea
+A5042.hea
+A2669.hea
+A6673.hea
+A6453.hea
+A0927.hea
+A1063.hea
+A1428.hea
+A6118.hea
+A2239.hea
+A0041.hea
+A6124.hea
+A2231.hea
+A6667.hea
+A1131.hea
+A4024.hea
+A4394.hea
+A6539.hea
+A6237.hea
+A0094.hea
+A3632.hea
+A6034.hea
+A0087.hea
+A0646.hea
+A5679.hea
+A0198.hea
+A5014.hea
+A3750.hea
+A4036.hea
+A3886.hea
+A6143.hea
+A5343.hea
+A5955.hea
+A4741.hea
+A3968.hea
+A1782.hea
+A2665.hea
+A1042.hea
+A5765.hea
+A2520.hea
+A3304.hea
+A5407.hea
+A2237.hea
+A1626.hea
+A5229.hea
+A1776.hea
+A3696.hea
+A3323.hea
+A3029.hea
+A5291.hea
+A5184.hea
+A1341.hea
+A6308.hea
+A0515.hea
+A3086.hea
+A1887.hea
+A4148.hea
+A4875.hea
+A5150.hea
+A6340.hea
+A3790.hea
+A1543.hea
+A0067.hea
+A2276.hea
+A5217.hea
+A6625.hea
+A1132.hea
+A5676.hea
+A3380.hea
+A1607.hea
+A0762.hea
+A0241.hea
+A6710.hea
+A1905.hea
+A3686.hea
+A3263.hea
+A2503.hea
+A5720.hea
+A1832.hea
+A5393.hea
+A5405.hea
+A0782.hea
+A1275.hea
+A2261.hea
+A3511.hea
+A4365.hea
+A5555.hea
+A5155.hea
+A5892.hea
+A2584.hea
+A6605.hea
+A4598.hea
+A0138.hea
+A3037.hea
+A1884.hea
+A3128.hea
+A1556.hea
+A0038.hea
+A4902.hea
+A6352.hea
+A2467.hea
+A1047.hea
+A0551.hea
+A0195.hea
+A0254.hea
+A1842.hea
+A2609.hea
+A4286.hea
+A4928.hea
+A6141.hea
+A5634.hea
+A0644.hea
+A5158.hea
+A5174.hea
+A4731.hea
+A5430.hea
+A0951.hea
+A0491.hea
+A4918.hea
+A3940.hea
+A4150.hea
+A0256.hea
+A5602.hea
+A6703.hea
+A6191.hea
+A3738.hea
+A6169.hea
+A5547.hea
+A3460.hea
+A3177.hea
+A0994.hea
+A6523.hea
+A4702.hea
+A0547.hea
+A2491.hea
+A1387.hea
+A2086.hea
+A5995.hea
+A5656.hea
+A1008.hea
+A0207.hea
+A0676.hea
+A1952.hea
+A4082.hea
+A6754.hea
+A4751.hea
+A3313.hea
+A3924.hea
+A0517.hea
+A5488.hea
+A1351.hea
+A0735.hea
+A6068.hea
+A1867.hea
+A4087.hea
+A3878.hea
+A1915.hea
+A1818.hea
+A1456.hea
+A2400.hea
+A3913.hea
+A5659.hea
+A6877.hea
+A0872.hea
+A2709.hea
+A5682.hea
+A2394.hea
+A4951.hea
+A5296.hea
+A2226.hea
+A3673.hea
+A6639.hea
+A0613.hea
+A5247.hea
+A5336.hea
+A5189.hea
+A1525.hea
+A6253.hea
+A6292.hea
+A5061.hea
+A6588.hea
+A0904.hea
+A0437.hea
+A0608.hea
+A3331.hea
+A0033.hea
+A0081.hea
+A0246.hea
+A5889.hea
+A5169.hea
+A4600.hea
+A0220.hea
+A6788.hea
+A4411.hea
+A5708.hea
+A6424.hea
+A1264.hea
+A3274.hea
+A4498.hea
+A4045.hea
+A3335.hea
+A0168.hea
+A2094.hea
+A6727.hea
+A4709.hea
+A3545.hea
+A3762.hea
+A4831.hea
+A5128.hea
+A0986.hea
+A3404.hea
+A0827.hea
+A0326.hea
+A2655.hea
+A1452.hea
+A6836.hea
+A6645.hea
+A1521.hea
+A5525.hea
+A1182.hea
+A5439.hea
+A5841.hea
+A6594.hea
+A0395.hea
+A0810.hea
+A0150.hea
+A1599.hea
+A0332.hea
+A3817.hea
+A5445.hea
+A2244.hea
+A2867.hea
+A3692.hea
+A5548.hea
+A6207.hea
+A3363.hea
+A6503.hea
+A2621.hea
+A5906.hea
+A6273.hea
+A0701.hea
+A4462.hea
+A2881.hea
+A5999.hea
+A6455.hea
+A2393.hea
+A2892.hea
+A0719.hea
+A2062.hea
+A3079.hea
+A3378.hea
+A6305.hea
+A3870.hea
+A0906.hea
+A4083.hea
+A5379.hea
+A4333.hea
+A3737.hea
+A2723.hea
+A4527.hea
+A5554.hea
+A1336.hea
+A6105.hea
+A2683.hea
+A2857.hea
+A1477.hea
+A5381.hea
+A6439.hea
+A4809.hea
+A1503.hea
+A1174.hea
+A1121.hea
+A5254.hea
+A0720.hea
+A6725.hea
+A1959.hea
+A4281.hea
+A1845.hea
+A1242.hea
+A4605.hea
+A4637.hea
+A5426.hea
+A3322.hea
+A2802.hea
+A4032.hea
+A4071.hea
+A0582.hea
+A0440.hea
+A6528.hea
+A3272.hea
+A3195.hea
+A3417.hea
+A5539.hea
+A4571.hea
+A2883.hea
+A2852.hea
+A1676.hea
+A4639.hea
+A3764.hea
+A4182.hea
+A1813.hea
+A0761.hea
+A3279.hea
+A2211.hea
+A4753.hea
+A3800.hea
+A3238.hea
+A3440.hea
+A5721.hea
+A6021.hea
+A5441.hea
+A6216.hea
+A0611.hea
+A0066.hea
+A3766.hea
+A3209.hea
+A2148.hea
+A6316.hea
+A6103.hea
+A2346.hea
+A2117.hea
+A3904.hea
+A1081.hea
+A2853.hea
+A5903.hea
+A3370.hea
+A2196.hea
+A6858.hea
+A2632.hea
+A4795.hea
+A2243.hea
+A0610.hea
+A0479.hea
+A4562.hea
+A2502.hea
+A4210.hea
+A1160.hea
+A0965.hea
+A0614.hea
+A4092.hea
+A4054.hea
+A4525.hea
+A5031.hea
+A2704.hea
+A2080.hea
+A2941.hea
+A2414.hea
+A1475.hea
+A3792.hea
+A4067.hea
+A4414.hea
+A0268.hea
+A0995.hea
+A5033.hea
+A5149.hea
+A4058.hea
+A2230.hea
+A2048.hea
+A3234.hea
+A3638.hea
+A1284.hea
+A0306.hea
+A6309.hea
+A4195.hea
+A3684.hea
+A0639.hea
+A5176.hea
+A4870.hea
+A1990.hea
+A6018.hea
+A0106.hea
+A3278.hea
+A1741.hea
+A2090.hea
+A5523.hea
+A4827.hea
+A2341.hea
+A0583.hea
+A4940.hea
+A6266.hea
+A5694.hea
+A0036.hea
+A6083.hea
+A0409.hea
+A5763.hea
+A3613.hea
+A3583.hea
+A0242.hea
+A5564.hea
+A0266.hea
+A2727.hea
+A1185.hea
+A1233.hea
+A1277.hea
+A6798.hea
+A3825.hea
+A1686.hea
+A0377.hea
+A6211.hea
+A6146.hea
+A6024.hea
+A3568.hea
+A1871.hea
+A5873.hea
+A3725.hea
+A5929.hea
+A1642.hea
+A0543.hea
+A3084.hea
+A3065.hea
+A2221.hea
+A4139.hea
+A4192.hea
+A3928.hea
+A4149.hea
+A0200.hea
+A3769.hea
+A1148.hea
+A3285.hea
+A4293.hea
+A3126.hea
+A5120.hea
+A5167.hea
+A4814.hea
+A2841.hea
+A0702.hea
+A2698.hea
+A1234.hea
+A1962.hea
+A3441.hea
+A0084.hea
+A5811.hea
+A2975.hea
+A6000.hea
+A6484.hea
+A6507.hea
+A1735.hea
+A4786.hea
+A0967.hea
+A2498.hea
+A5855.hea
+A2027.hea
+A5248.hea
+A1380.hea
+A4344.hea
+A1967.hea
+A0355.hea
+A3153.hea
+A0548.hea
+A5347.hea
+A2627.hea
+A4978.hea
+A4733.hea
+A6701.hea
+A3482.hea
+A2210.hea
+A2994.hea
+A6012.hea
+A4078.hea
+A6092.hea
+A5361.hea
+A0462.hea
+A3553.hea
+A6715.hea
+A0840.hea
+A3307.hea
+A4189.hea
+A2438.hea
+A6026.hea
+A4670.hea
+A6280.hea
+A1214.hea
+A0213.hea
+A4551.hea
+A1080.hea
+A3472.hea
+A3242.hea
+A4782.hea
+A4939.hea
+A1011.hea
+A0879.hea
+A0454.hea
+A1243.hea
+A4059.hea
+A4609.hea
+A3300.hea
+A3007.hea
+A1345.hea
+A4662.hea
+A1738.hea
+A3182.hea
+A5900.hea
+A0239.hea
+A1963.hea
+A4451.hea
+A5200.hea
+A4700.hea
+A6825.hea
+A2060.hea
+A2840.hea
+A0415.hea
+A0414.hea
+A1992.hea
+A5351.hea
+A0021.hea
+A3192.hea
+A1981.hea
+A0682.hea
+A2958.hea
+A5053.hea
+A6550.hea
+A6841.hea
+A6079.hea
+A2969.hea
+A4279.hea
+A1197.hea
+A5616.hea
+A2862.hea
+A3173.hea
+A3988.hea
+A4578.hea
+A5470.hea
+A1153.hea
+A3530.hea
+A4299.hea
+A0712.hea
+A4760.hea
+A4718.hea
+A4837.hea
+A6737.hea
+A5574.hea
+A6044.hea
+A0497.hea
+A4174.hea
+A5506.hea
+A2702.hea
+A3521.hea
+A6275.hea
+A4990.hea
+A6513.hea
+A3730.hea
+A0737.hea
+A0796.hea
+A3862.hea
+A1184.hea
+A2972.hea
+A4487.hea
+A1713.hea
+A4347.hea
+segmenting data...
+reshaping segmented arrays...
+Standardizing...
+shape of the array of segments is : (9100, 2000, 12)
+shape of the array of IDs is : (9100, 1)
+shape of the array of labels is : (9100, 1)
+
+  32/9100 [..............................] - ETA: 10:22
+  64/9100 [..............................] - ETA: 5:20 
+  96/9100 [..............................] - ETA: 3:39
+ 128/9100 [..............................] - ETA: 2:49
+ 160/9100 [..............................] - ETA: 2:18
+ 192/9100 [..............................] - ETA: 1:58
+ 224/9100 [..............................] - ETA: 1:44
+ 256/9100 [..............................] - ETA: 1:33
+ 288/9100 [..............................] - ETA: 1:24
+ 320/9100 [>.............................] - ETA: 1:17
+ 352/9100 [>.............................] - ETA: 1:12
+ 384/9100 [>.............................] - ETA: 1:07
+ 416/9100 [>.............................] - ETA: 1:03
+ 448/9100 [>.............................] - ETA: 59s 
+ 480/9100 [>.............................] - ETA: 56s
+ 512/9100 [>.............................] - ETA: 54s
+ 544/9100 [>.............................] - ETA: 52s
+ 576/9100 [>.............................] - ETA: 49s
+ 608/9100 [=>............................] - ETA: 48s
+ 640/9100 [=>............................] - ETA: 46s
+ 672/9100 [=>............................] - ETA: 44s
+ 704/9100 [=>............................] - ETA: 43s
+ 736/9100 [=>............................] - ETA: 42s
+ 768/9100 [=>............................] - ETA: 41s
+ 800/9100 [=>............................] - ETA: 39s
+ 832/9100 [=>............................] - ETA: 38s
+ 864/9100 [=>............................] - ETA: 37s
+ 896/9100 [=>............................] - ETA: 37s
+ 928/9100 [==>...........................] - ETA: 36s
+ 960/9100 [==>...........................] - ETA: 35s
+ 992/9100 [==>...........................] - ETA: 34s
+1024/9100 [==>...........................] - ETA: 34s
+1056/9100 [==>...........................] - ETA: 33s
+1088/9100 [==>...........................] - ETA: 32s
+1120/9100 [==>...........................] - ETA: 32s
+1152/9100 [==>...........................] - ETA: 31s
+1184/9100 [==>...........................] - ETA: 31s
+1216/9100 [===>..........................] - ETA: 30s
+1248/9100 [===>..........................] - ETA: 30s
+1280/9100 [===>..........................] - ETA: 29s
+1312/9100 [===>..........................] - ETA: 29s
+1344/9100 [===>..........................] - ETA: 28s
+1376/9100 [===>..........................] - ETA: 28s
+1408/9100 [===>..........................] - ETA: 28s
+1440/9100 [===>..........................] - ETA: 27s
+1472/9100 [===>..........................] - ETA: 27s
+1504/9100 [===>..........................] - ETA: 27s
+1536/9100 [====>.........................] - ETA: 26s
+1568/9100 [====>.........................] - ETA: 26s
+1600/9100 [====>.........................] - ETA: 26s
+1632/9100 [====>.........................] - ETA: 25s
+1664/9100 [====>.........................] - ETA: 25s
+1696/9100 [====>.........................] - ETA: 25s
+1728/9100 [====>.........................] - ETA: 24s
+1760/9100 [====>.........................] - ETA: 24s
+1792/9100 [====>.........................] - ETA: 24s
+1824/9100 [=====>........................] - ETA: 24s
+1856/9100 [=====>........................] - ETA: 23s
+1888/9100 [=====>........................] - ETA: 23s
+1920/9100 [=====>........................] - ETA: 23s
+1952/9100 [=====>........................] - ETA: 23s
+1984/9100 [=====>........................] - ETA: 22s
+2016/9100 [=====>........................] - ETA: 22s
+2048/9100 [=====>........................] - ETA: 22s
+2080/9100 [=====>........................] - ETA: 22s
+2112/9100 [=====>........................] - ETA: 22s
+2144/9100 [======>.......................] - ETA: 21s
+2176/9100 [======>.......................] - ETA: 21s
+2208/9100 [======>.......................] - ETA: 21s
+2240/9100 [======>.......................] - ETA: 21s
+2272/9100 [======>.......................] - ETA: 21s
+2304/9100 [======>.......................] - ETA: 20s
+2336/9100 [======>.......................] - ETA: 20s
+2368/9100 [======>.......................] - ETA: 20s
+2400/9100 [======>.......................] - ETA: 20s
+2432/9100 [=======>......................] - ETA: 20s
+2464/9100 [=======>......................] - ETA: 20s
+2496/9100 [=======>......................] - ETA: 19s
+2528/9100 [=======>......................] - ETA: 19s
+2560/9100 [=======>......................] - ETA: 19s
+2592/9100 [=======>......................] - ETA: 19s
+2624/9100 [=======>......................] - ETA: 19s
+2656/9100 [=======>......................] - ETA: 19s
+2688/9100 [=======>......................] - ETA: 18s
+2720/9100 [=======>......................] - ETA: 18s
+2752/9100 [========>.....................] - ETA: 18s
+2784/9100 [========>.....................] - ETA: 18s
+2816/9100 [========>.....................] - ETA: 18s
+2848/9100 [========>.....................] - ETA: 18s
+2880/9100 [========>.....................] - ETA: 18s
+2912/9100 [========>.....................] - ETA: 17s
+2944/9100 [========>.....................] - ETA: 17s
+2976/9100 [========>.....................] - ETA: 17s
+3008/9100 [========>.....................] - ETA: 17s
+3040/9100 [=========>....................] - ETA: 17s
+3072/9100 [=========>....................] - ETA: 17s
+3104/9100 [=========>....................] - ETA: 17s
+3136/9100 [=========>....................] - ETA: 16s
+3168/9100 [=========>....................] - ETA: 16s
+3200/9100 [=========>....................] - ETA: 16s
+3232/9100 [=========>....................] - ETA: 16s
+3264/9100 [=========>....................] - ETA: 16s
+3296/9100 [=========>....................] - ETA: 16s
+3328/9100 [=========>....................] - ETA: 16s
+3360/9100 [==========>...................] - ETA: 16s
+3392/9100 [==========>...................] - ETA: 15s
+3424/9100 [==========>...................] - ETA: 15s
+3456/9100 [==========>...................] - ETA: 15s
+3488/9100 [==========>...................] - ETA: 15s
+3520/9100 [==========>...................] - ETA: 15s
+3552/9100 [==========>...................] - ETA: 15s
+3584/9100 [==========>...................] - ETA: 15s
+3616/9100 [==========>...................] - ETA: 15s
+3648/9100 [===========>..................] - ETA: 14s
+3680/9100 [===========>..................] - ETA: 14s
+3712/9100 [===========>..................] - ETA: 14s
+3744/9100 [===========>..................] - ETA: 14s
+3776/9100 [===========>..................] - ETA: 14s
+3808/9100 [===========>..................] - ETA: 14s
+3840/9100 [===========>..................] - ETA: 14s
+3872/9100 [===========>..................] - ETA: 14s
+3904/9100 [===========>..................] - ETA: 14s
+3936/9100 [===========>..................] - ETA: 13s
+3968/9100 [============>.................] - ETA: 13s
+4000/9100 [============>.................] - ETA: 13s
+4032/9100 [============>.................] - ETA: 13s
+4064/9100 [============>.................] - ETA: 13s
+4096/9100 [============>.................] - ETA: 13s
+4128/9100 [============>.................] - ETA: 13s
+4160/9100 [============>.................] - ETA: 13s
+4192/9100 [============>.................] - ETA: 13s
+4224/9100 [============>.................] - ETA: 12s
+4256/9100 [=============>................] - ETA: 12s
+4288/9100 [=============>................] - ETA: 12s
+4320/9100 [=============>................] - ETA: 12s
+4352/9100 [=============>................] - ETA: 12s
+4384/9100 [=============>................] - ETA: 12s
+4416/9100 [=============>................] - ETA: 12s
+4448/9100 [=============>................] - ETA: 12s
+4480/9100 [=============>................] - ETA: 12s
+4512/9100 [=============>................] - ETA: 12s
+4544/9100 [=============>................] - ETA: 11s
+4576/9100 [==============>...............] - ETA: 11s
+4608/9100 [==============>...............] - ETA: 11s
+4640/9100 [==============>...............] - ETA: 11s
+4672/9100 [==============>...............] - ETA: 11s
+4704/9100 [==============>...............] - ETA: 11s
+4736/9100 [==============>...............] - ETA: 11s
+4768/9100 [==============>...............] - ETA: 11s
+4800/9100 [==============>...............] - ETA: 11s
+4832/9100 [==============>...............] - ETA: 11s
+4864/9100 [===============>..............] - ETA: 11s
+4896/9100 [===============>..............] - ETA: 10s
+4928/9100 [===============>..............] - ETA: 10s
+4960/9100 [===============>..............] - ETA: 10s
+4992/9100 [===============>..............] - ETA: 10s
+5024/9100 [===============>..............] - ETA: 10s
+5056/9100 [===============>..............] - ETA: 10s
+5088/9100 [===============>..............] - ETA: 10s
+5120/9100 [===============>..............] - ETA: 10s
+5152/9100 [===============>..............] - ETA: 10s
+5184/9100 [================>.............] - ETA: 10s
+5216/9100 [================>.............] - ETA: 9s 
+5248/9100 [================>.............] - ETA: 9s
+5280/9100 [================>.............] - ETA: 9s
+5312/9100 [================>.............] - ETA: 9s
+5344/9100 [================>.............] - ETA: 9s
+5376/9100 [================>.............] - ETA: 9s
+5408/9100 [================>.............] - ETA: 9s
+5440/9100 [================>.............] - ETA: 9s
+5472/9100 [=================>............] - ETA: 9s
+5504/9100 [=================>............] - ETA: 9s
+5536/9100 [=================>............] - ETA: 9s
+5568/9100 [=================>............] - ETA: 8s
+5600/9100 [=================>............] - ETA: 8s
+5632/9100 [=================>............] - ETA: 8s
+5664/9100 [=================>............] - ETA: 8s
+5696/9100 [=================>............] - ETA: 8s
+5728/9100 [=================>............] - ETA: 8s
+5760/9100 [=================>............] - ETA: 8s
+5792/9100 [==================>...........] - ETA: 8s
+5824/9100 [==================>...........] - ETA: 8s
+5856/9100 [==================>...........] - ETA: 8s
+5888/9100 [==================>...........] - ETA: 8s
+5920/9100 [==================>...........] - ETA: 8s
+5952/9100 [==================>...........] - ETA: 7s
+5984/9100 [==================>...........] - ETA: 7s
+6016/9100 [==================>...........] - ETA: 7s
+6048/9100 [==================>...........] - ETA: 7s
+6080/9100 [===================>..........] - ETA: 7s
+6112/9100 [===================>..........] - ETA: 7s
+6144/9100 [===================>..........] - ETA: 7s
+6176/9100 [===================>..........] - ETA: 7s
+6208/9100 [===================>..........] - ETA: 7s
+6240/9100 [===================>..........] - ETA: 7s
+6272/9100 [===================>..........] - ETA: 7s
+6304/9100 [===================>..........] - ETA: 6s
+6336/9100 [===================>..........] - ETA: 6s
+6368/9100 [===================>..........] - ETA: 6s
+6400/9100 [====================>.........] - ETA: 6s
+6432/9100 [====================>.........] - ETA: 6s
+6464/9100 [====================>.........] - ETA: 6s
+6496/9100 [====================>.........] - ETA: 6s
+6528/9100 [====================>.........] - ETA: 6s
+6560/9100 [====================>.........] - ETA: 6s
+6592/9100 [====================>.........] - ETA: 6s
+6624/9100 [====================>.........] - ETA: 6s
+6656/9100 [====================>.........] - ETA: 6s
+6688/9100 [=====================>........] - ETA: 5s
+6720/9100 [=====================>........] - ETA: 5s
+6752/9100 [=====================>........] - ETA: 5s
+6784/9100 [=====================>........] - ETA: 5s
+6816/9100 [=====================>........] - ETA: 5s
+6848/9100 [=====================>........] - ETA: 5s
+6880/9100 [=====================>........] - ETA: 5s
+6912/9100 [=====================>........] - ETA: 5s
+6944/9100 [=====================>........] - ETA: 5s
+6976/9100 [=====================>........] - ETA: 5s
+7008/9100 [======================>.......] - ETA: 5s
+7040/9100 [======================>.......] - ETA: 5s
+7072/9100 [======================>.......] - ETA: 4s
+7104/9100 [======================>.......] - ETA: 4s
+7136/9100 [======================>.......] - ETA: 4s
+7168/9100 [======================>.......] - ETA: 4s
+7200/9100 [======================>.......] - ETA: 4s
+7232/9100 [======================>.......] - ETA: 4s
+7264/9100 [======================>.......] - ETA: 4s
+7296/9100 [=======================>......] - ETA: 4s
+7328/9100 [=======================>......] - ETA: 4s
+7360/9100 [=======================>......] - ETA: 4s
+7392/9100 [=======================>......] - ETA: 4s
+7424/9100 [=======================>......] - ETA: 4s
+7456/9100 [=======================>......] - ETA: 4s
+7488/9100 [=======================>......] - ETA: 3s
+7520/9100 [=======================>......] - ETA: 3s
+7552/9100 [=======================>......] - ETA: 3s
+7584/9100 [========================>.....] - ETA: 3s
+7616/9100 [========================>.....] - ETA: 3s
+7648/9100 [========================>.....] - ETA: 3s
+7680/9100 [========================>.....] - ETA: 3s
+7712/9100 [========================>.....] - ETA: 3s
+7744/9100 [========================>.....] - ETA: 3s
+7776/9100 [========================>.....] - ETA: 3s
+7808/9100 [========================>.....] - ETA: 3s
+7840/9100 [========================>.....] - ETA: 3s
+7872/9100 [========================>.....] - ETA: 2s
+7904/9100 [=========================>....] - ETA: 2s
+7936/9100 [=========================>....] - ETA: 2s
+7968/9100 [=========================>....] - ETA: 2s
+8000/9100 [=========================>....] - ETA: 2s
+8032/9100 [=========================>....] - ETA: 2s
+8064/9100 [=========================>....] - ETA: 2s
+8096/9100 [=========================>....] - ETA: 2s
+8128/9100 [=========================>....] - ETA: 2s
+8160/9100 [=========================>....] - ETA: 2s
+8192/9100 [==========================>...] - ETA: 2s
+8224/9100 [==========================>...] - ETA: 2s
+8256/9100 [==========================>...] - ETA: 2s
+8288/9100 [==========================>...] - ETA: 1s
+8320/9100 [==========================>...] - ETA: 1s
+8352/9100 [==========================>...] - ETA: 1s
+8384/9100 [==========================>...] - ETA: 1s
+8416/9100 [==========================>...] - ETA: 1s
+8448/9100 [==========================>...] - ETA: 1s
+8480/9100 [==========================>...] - ETA: 1s
+8512/9100 [===========================>..] - ETA: 1s
+8544/9100 [===========================>..] - ETA: 1s
+8576/9100 [===========================>..] - ETA: 1s
+8608/9100 [===========================>..] - ETA: 1s
+8640/9100 [===========================>..] - ETA: 1s
+8672/9100 [===========================>..] - ETA: 1s
+8704/9100 [===========================>..] - ETA: 0s
+8736/9100 [===========================>..] - ETA: 0s
+8768/9100 [===========================>..] - ETA: 0s
+8800/9100 [============================>.] - ETA: 0s
+8832/9100 [============================>.] - ETA: 0s
+8864/9100 [============================>.] - ETA: 0s
+8896/9100 [============================>.] - ETA: 0s
+8928/9100 [============================>.] - ETA: 0s
+8960/9100 [============================>.] - ETA: 0s
+8992/9100 [============================>.] - ETA: 0s
+9024/9100 [============================>.] - ETA: 0s
+9056/9100 [============================>.] - ETA: 0s
+9088/9100 [============================>.] - ETA: 0s
+9100/9100 [==============================] - 22s 2ms/step
+  32/9100 [..............................] - ETA: 11:22  64/9100 [..............................] - ETA: 5:53   96/9100 [..............................] - ETA: 4:03 128/9100 [..............................] - ETA: 3:08 160/9100 [..............................] - ETA: 2:35 192/9100 [..............................] - ETA: 2:13 224/9100 [..............................] - ETA: 1:58 256/9100 [..............................] - ETA: 1:46 288/9100 [..............................] - ETA: 1:37 320/9100 [>.............................] - ETA: 1:29 352/9100 [>.............................] - ETA: 1:23 384/9100 [>.............................] - ETA: 1:18 416/9100 [>.............................] - ETA: 1:13 448/9100 [>.............................] - ETA: 1:10 480/9100 [>.............................] - ETA: 1:07 512/9100 [>.............................] - ETA: 1:04 544/9100 [>.............................] - ETA: 1:01 576/9100 [>.............................] - ETA: 59s  608/9100 [=>............................] - ETA: 57s 640/9100 [=>............................] - ETA: 55s 672/9100 [=>............................] - ETA: 53s 704/9100 [=>............................] - ETA: 52s 736/9100 [=>............................] - ETA: 50s 768/9100 [=>............................] - ETA: 49s 800/9100 [=>............................] - ETA: 48s 832/9100 [=>............................] - ETA: 47s 864/9100 [=>............................] - ETA: 46s 896/9100 [=>............................] - ETA: 45s 928/9100 [==>...........................] - ETA: 44s 960/9100 [==>...........................] - ETA: 43s 992/9100 [==>...........................] - ETA: 42s1024/9100 [==>...........................] - ETA: 42s1056/9100 [==>...........................] - ETA: 41s1088/9100 [==>...........................] - ETA: 40s1120/9100 [==>...........................] - ETA: 39s1152/9100 [==>...........................] - ETA: 39s1184/9100 [==>...........................] - ETA: 38s1216/9100 [===>..........................] - ETA: 38s1248/9100 [===>..........................] - ETA: 37s1280/9100 [===>..........................] - ETA: 37s1312/9100 [===>..........................] - ETA: 36s1344/9100 [===>..........................] - ETA: 36s1376/9100 [===>..........................] - ETA: 35s1408/9100 [===>..........................] - ETA: 35s1440/9100 [===>..........................] - ETA: 34s1472/9100 [===>..........................] - ETA: 34s1504/9100 [===>..........................] - ETA: 33s1536/9100 [====>.........................] - ETA: 33s1568/9100 [====>.........................] - ETA: 33s1600/9100 [====>.........................] - ETA: 32s1632/9100 [====>.........................] - ETA: 32s1664/9100 [====>.........................] - ETA: 32s1696/9100 [====>.........................] - ETA: 31s1728/9100 [====>.........................] - ETA: 31s1760/9100 [====>.........................] - ETA: 31s1792/9100 [====>.........................] - ETA: 30s1824/9100 [=====>........................] - ETA: 30s1856/9100 [=====>........................] - ETA: 30s1888/9100 [=====>........................] - ETA: 29s1920/9100 [=====>........................] - ETA: 29s1952/9100 [=====>........................] - ETA: 29s1984/9100 [=====>........................] - ETA: 29s2016/9100 [=====>........................] - ETA: 28s2048/9100 [=====>........................] - ETA: 28s2080/9100 [=====>........................] - ETA: 28s2112/9100 [=====>........................] - ETA: 28s2144/9100 [======>.......................] - ETA: 27s2176/9100 [======>.......................] - ETA: 27s2208/9100 [======>.......................] - ETA: 27s2240/9100 [======>.......................] - ETA: 27s2272/9100 [======>.......................] - ETA: 26s2304/9100 [======>.......................] - ETA: 26s2336/9100 [======>.......................] - ETA: 26s2368/9100 [======>.......................] - ETA: 26s2400/9100 [======>.......................] - ETA: 26s2432/9100 [=======>......................] - ETA: 25s2464/9100 [=======>......................] - ETA: 25s2496/9100 [=======>......................] - ETA: 25s2528/9100 [=======>......................] - ETA: 25s2560/9100 [=======>......................] - ETA: 24s2592/9100 [=======>......................] - ETA: 24s2624/9100 [=======>......................] - ETA: 24s2656/9100 [=======>......................] - ETA: 24s2688/9100 [=======>......................] - ETA: 24s2720/9100 [=======>......................] - ETA: 24s2752/9100 [========>.....................] - ETA: 23s2784/9100 [========>.....................] - ETA: 23s2816/9100 [========>.....................] - ETA: 23s2848/9100 [========>.....................] - ETA: 23s2880/9100 [========>.....................] - ETA: 23s2912/9100 [========>.....................] - ETA: 22s2944/9100 [========>.....................] - ETA: 22s2976/9100 [========>.....................] - ETA: 22s3008/9100 [========>.....................] - ETA: 22s3040/9100 [=========>....................] - ETA: 22s3072/9100 [=========>....................] - ETA: 22s3104/9100 [=========>....................] - ETA: 21s3136/9100 [=========>....................] - ETA: 21s3168/9100 [=========>....................] - ETA: 21s3200/9100 [=========>....................] - ETA: 21s3232/9100 [=========>....................] - ETA: 21s3264/9100 [=========>....................] - ETA: 21s3296/9100 [=========>....................] - ETA: 20s3328/9100 [=========>....................] - ETA: 20s3360/9100 [==========>...................] - ETA: 20s3392/9100 [==========>...................] - ETA: 20s3424/9100 [==========>...................] - ETA: 20s3456/9100 [==========>...................] - ETA: 20s3488/9100 [==========>...................] - ETA: 20s3520/9100 [==========>...................] - ETA: 19s3552/9100 [==========>...................] - ETA: 19s3584/9100 [==========>...................] - ETA: 19s3616/9100 [==========>...................] - ETA: 19s3648/9100 [===========>..................] - ETA: 19s3680/9100 [===========>..................] - ETA: 19s3712/9100 [===========>..................] - ETA: 19s3744/9100 [===========>..................] - ETA: 18s3776/9100 [===========>..................] - ETA: 18s3808/9100 [===========>..................] - ETA: 18s3840/9100 [===========>..................] - ETA: 18s3872/9100 [===========>..................] - ETA: 18s3904/9100 [===========>..................] - ETA: 18s3936/9100 [===========>..................] - ETA: 18s3968/9100 [============>.................] - ETA: 17s4000/9100 [============>.................] - ETA: 17s4032/9100 [============>.................] - ETA: 17s4064/9100 [============>.................] - ETA: 17s4096/9100 [============>.................] - ETA: 17s4128/9100 [============>.................] - ETA: 17s4160/9100 [============>.................] - ETA: 17s4192/9100 [============>.................] - ETA: 16s4224/9100 [============>.................] - ETA: 16s4256/9100 [=============>................] - ETA: 16s4288/9100 [=============>................] - ETA: 16s4320/9100 [=============>................] - ETA: 16s4352/9100 [=============>................] - ETA: 16s4384/9100 [=============>................] - ETA: 16s4416/9100 [=============>................] - ETA: 16s4448/9100 [=============>................] - ETA: 15s4480/9100 [=============>................] - ETA: 15s4512/9100 [=============>................] - ETA: 15s4544/9100 [=============>................] - ETA: 15s4576/9100 [==============>...............] - ETA: 15s4608/9100 [==============>...............] - ETA: 15s4640/9100 [==============>...............] - ETA: 15s4672/9100 [==============>...............] - ETA: 15s4704/9100 [==============>...............] - ETA: 14s4736/9100 [==============>...............] - ETA: 14s4768/9100 [==============>...............] - ETA: 14s4800/9100 [==============>...............] - ETA: 14s4832/9100 [==============>...............] - ETA: 14s4864/9100 [===============>..............] - ETA: 14s4896/9100 [===============>..............] - ETA: 14s4928/9100 [===============>..............] - ETA: 14s4960/9100 [===============>..............] - ETA: 13s4992/9100 [===============>..............] - ETA: 13s5024/9100 [===============>..............] - ETA: 13s5056/9100 [===============>..............] - ETA: 13s5088/9100 [===============>..............] - ETA: 13s5120/9100 [===============>..............] - ETA: 13s5152/9100 [===============>..............] - ETA: 13s5184/9100 [================>.............] - ETA: 13s5216/9100 [================>.............] - ETA: 12s5248/9100 [================>.............] - ETA: 12s5280/9100 [================>.............] - ETA: 12s5312/9100 [================>.............] - ETA: 12s5344/9100 [================>.............] - ETA: 12s5376/9100 [================>.............] - ETA: 12s5408/9100 [================>.............] - ETA: 12s5440/9100 [================>.............] - ETA: 12s5472/9100 [=================>............] - ETA: 12s5504/9100 [=================>............] - ETA: 11s5536/9100 [=================>............] - ETA: 11s5568/9100 [=================>............] - ETA: 11s5600/9100 [=================>............] - ETA: 11s5632/9100 [=================>............] - ETA: 11s5664/9100 [=================>............] - ETA: 11s5696/9100 [=================>............] - ETA: 11s5728/9100 [=================>............] - ETA: 11s5760/9100 [=================>............] - ETA: 10s5792/9100 [==================>...........] - ETA: 10s5824/9100 [==================>...........] - ETA: 10s5856/9100 [==================>...........] - ETA: 10s5888/9100 [==================>...........] - ETA: 10s5920/9100 [==================>...........] - ETA: 10s5952/9100 [==================>...........] - ETA: 10s5984/9100 [==================>...........] - ETA: 10s6016/9100 [==================>...........] - ETA: 10s6048/9100 [==================>...........] - ETA: 9s 6080/9100 [===================>..........] - ETA: 9s6112/9100 [===================>..........] - ETA: 9s6144/9100 [===================>..........] - ETA: 9s6176/9100 [===================>..........] - ETA: 9s6208/9100 [===================>..........] - ETA: 9s6240/9100 [===================>..........] - ETA: 9s6272/9100 [===================>..........] - ETA: 9s6304/9100 [===================>..........] - ETA: 9s6336/9100 [===================>..........] - ETA: 8s6368/9100 [===================>..........] - ETA: 8s6400/9100 [====================>.........] - ETA: 8s6432/9100 [====================>.........] - ETA: 8s6464/9100 [====================>.........] - ETA: 8s6496/9100 [====================>.........] - ETA: 8s6528/9100 [====================>.........] - ETA: 8s6560/9100 [====================>.........] - ETA: 8s6592/9100 [====================>.........] - ETA: 8s6624/9100 [====================>.........] - ETA: 8s6656/9100 [====================>.........] - ETA: 7s6688/9100 [=====================>........] - ETA: 7s6720/9100 [=====================>........] - ETA: 7s6752/9100 [=====================>........] - ETA: 7s6784/9100 [=====================>........] - ETA: 7s6816/9100 [=====================>........] - ETA: 7s6848/9100 [=====================>........] - ETA: 7s6880/9100 [=====================>........] - ETA: 7s6912/9100 [=====================>........] - ETA: 7s6944/9100 [=====================>........] - ETA: 6s6976/9100 [=====================>........] - ETA: 6s7008/9100 [======================>.......] - ETA: 6s7040/9100 [======================>.......] - ETA: 6s7072/9100 [======================>.......] - ETA: 6s7104/9100 [======================>.......] - ETA: 6s7136/9100 [======================>.......] - ETA: 6s7168/9100 [======================>.......] - ETA: 6s7200/9100 [======================>.......] - ETA: 6s7232/9100 [======================>.......] - ETA: 5s7264/9100 [======================>.......] - ETA: 5s7296/9100 [=======================>......] - ETA: 5s7328/9100 [=======================>......] - ETA: 5s7360/9100 [=======================>......] - ETA: 5s7392/9100 [=======================>......] - ETA: 5s7424/9100 [=======================>......] - ETA: 5s7456/9100 [=======================>......] - ETA: 5s7488/9100 [=======================>......] - ETA: 5s7520/9100 [=======================>......] - ETA: 5s7552/9100 [=======================>......] - ETA: 4s7584/9100 [========================>.....] - ETA: 4s7616/9100 [========================>.....] - ETA: 4s7648/9100 [========================>.....] - ETA: 4s7680/9100 [========================>.....] - ETA: 4s7712/9100 [========================>.....] - ETA: 4s7744/9100 [========================>.....] - ETA: 4s7776/9100 [========================>.....] - ETA: 4s7808/9100 [========================>.....] - ETA: 4s7840/9100 [========================>.....] - ETA: 4s7872/9100 [========================>.....] - ETA: 3s7904/9100 [=========================>....] - ETA: 3s7936/9100 [=========================>....] - ETA: 3s7968/9100 [=========================>....] - ETA: 3s8000/9100 [=========================>....] - ETA: 3s8032/9100 [=========================>....] - ETA: 3s8064/9100 [=========================>....] - ETA: 3s8096/9100 [=========================>....] - ETA: 3s8128/9100 [=========================>....] - ETA: 3s8160/9100 [=========================>....] - ETA: 2s8192/9100 [==========================>...] - ETA: 2s8224/9100 [==========================>...] - ETA: 2s8256/9100 [==========================>...] - ETA: 2s8288/9100 [==========================>...] - ETA: 2s8320/9100 [==========================>...] - ETA: 2s8352/9100 [==========================>...] - ETA: 2s8384/9100 [==========================>...] - ETA: 2s8416/9100 [==========================>...] - ETA: 2s8448/9100 [==========================>...] - ETA: 2s8480/9100 [==========================>...] - ETA: 1s8512/9100 [===========================>..] - ETA: 1s8544/9100 [===========================>..] - ETA: 1s8576/9100 [===========================>..] - ETA: 1s8608/9100 [===========================>..] - ETA: 1s8640/9100 [===========================>..] - ETA: 1s8672/9100 [===========================>..] - ETA: 1s8704/9100 [===========================>..] - ETA: 1s8736/9100 [===========================>..] - ETA: 1s8768/9100 [===========================>..] - ETA: 1s8800/9100 [============================>.] - ETA: 0s8832/9100 [============================>.] - ETA: 0s8864/9100 [============================>.] - ETA: 0s8896/9100 [============================>.] - ETA: 0s8928/9100 [============================>.] - ETA: 0s8960/9100 [============================>.] - ETA: 0s8992/9100 [============================>.] - ETA: 0s9024/9100 [============================>.] - ETA: 0s9056/9100 [============================>.] - ETA: 0s9088/9100 [============================>.] - ETA: 0s9100/9100 [==============================] - 28s 3ms/sample
+
+Stage 1 f1-score:  0.7166549481041105
+[0.9266709928617781, 0.8609566184649611, 0.8327402135231317, 0.6370967741935484, 0.43922018348623854, 0.5284872298624754, 0.9198123743578289, 0.6876687668766877, 0.6172413793103448]
+
+Stage 1 f1-score (custom): 0.7104303349036974
+[0.9288409002211526, 0.8609566184649611, 0.8187543736878936, 0.6624182458494047, 0.3898615635179153, 0.477797513321492, 0.9109007255353034, 0.7059693217519867, 0.6383737517831669] 
+
+
+
+Stage 1 2 f1-score:  0.671673171827851
+[0.8952380952380953, 0.8505481823427582, 0.8208955223880597, 0.6498516320474778, 0.37857577601947656, 0.5265188042430087, 0.8833333333333333, 0.6826503923278117, 0.3574468085106383]
+
+Stage 1 2 f1-score (custom): 0.6551974169203674
+[0.8721007289595759, 0.8318284424379232, 0.7840342124019958, 0.7088525651399903, 0.3232176262731241, 0.481651376146789, 0.8559892328398385, 0.7140251687032646, 0.32507739938080493] 
+
+
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_1 (InputLayer)         (None, 120, 18)           0         
+_________________________________________________________________
+masking_1 (Masking)          (None, 120, 18)           0         
+_________________________________________________________________
+bidirectional_1 (Bidirection (None, 120, 60)           11760     
+_________________________________________________________________
+batch_normalization_1 (Batch (None, 120, 60)           240       
+_________________________________________________________________
+leaky_re_lu_1 (LeakyReLU)    (None, 120, 60)           0         
+_________________________________________________________________
+bidirectional_2 (Bidirection (None, 60)                21840     
+_________________________________________________________________
+batch_normalization_2 (Batch (None, 60)                240       
+_________________________________________________________________
+leaky_re_lu_2 (LeakyReLU)    (None, 60)                0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 9)                 549       
+=================================================================
+Total params: 34,629
+Trainable params: 34,389
+Non-trainable params: 240
+_________________________________________________________________
+Train on 5501 samples, validate on 1376 samples
+Epoch 1/30
+ - 60s - loss: 0.2300 - categorical_accuracy: 0.7640 - val_loss: 0.1327 - val_categorical_accuracy: 0.7907
+Epoch 2/30
+ - 52s - loss: 0.1285 - categorical_accuracy: 0.7926 - val_loss: 0.1253 - val_categorical_accuracy: 0.7994
+Epoch 3/30
+ - 53s - loss: 0.1214 - categorical_accuracy: 0.8053 - val_loss: 0.1226 - val_categorical_accuracy: 0.7878
+Epoch 4/30
+ - 53s - loss: 0.1182 - categorical_accuracy: 0.8044 - val_loss: 0.1199 - val_categorical_accuracy: 0.8103
+Epoch 5/30
+ - 53s - loss: 0.1152 - categorical_accuracy: 0.8164 - val_loss: 0.1210 - val_categorical_accuracy: 0.8125
+Epoch 6/30
+ - 53s - loss: 0.1106 - categorical_accuracy: 0.8204 - val_loss: 0.1172 - val_categorical_accuracy: 0.8161
+Epoch 7/30
+ - 53s - loss: 0.1101 - categorical_accuracy: 0.8208 - val_loss: 0.1171 - val_categorical_accuracy: 0.8161
+Epoch 8/30
+ - 53s - loss: 0.1084 - categorical_accuracy: 0.8235 - val_loss: 0.1141 - val_categorical_accuracy: 0.8176
+Epoch 9/30
+ - 53s - loss: 0.1042 - categorical_accuracy: 0.8258 - val_loss: 0.1144 - val_categorical_accuracy: 0.8118
+Epoch 10/30
+ - 53s - loss: 0.1029 - categorical_accuracy: 0.8337 - val_loss: 0.1148 - val_categorical_accuracy: 0.8023
+Epoch 11/30
+ - 52s - loss: 0.1022 - categorical_accuracy: 0.8306 - val_loss: 0.1143 - val_categorical_accuracy: 0.8198
+Epoch 12/30
+ - 52s - loss: 0.1005 - categorical_accuracy: 0.8404 - val_loss: 0.1136 - val_categorical_accuracy: 0.8190
+Epoch 13/30
+ - 52s - loss: 0.0983 - categorical_accuracy: 0.8446 - val_loss: 0.1147 - val_categorical_accuracy: 0.8074
+Epoch 14/30
+ - 52s - loss: 0.0962 - categorical_accuracy: 0.8404 - val_loss: 0.1158 - val_categorical_accuracy: 0.8241
+Epoch 15/30
+ - 52s - loss: 0.0950 - categorical_accuracy: 0.8455 - val_loss: 0.1132 - val_categorical_accuracy: 0.8067
+Epoch 16/30
+ - 52s - loss: 0.0948 - categorical_accuracy: 0.8462 - val_loss: 0.1149 - val_categorical_accuracy: 0.8118
+Epoch 17/30
+ - 52s - loss: 0.0928 - categorical_accuracy: 0.8498 - val_loss: 0.1154 - val_categorical_accuracy: 0.8278
+Epoch 18/30
+ - 52s - loss: 0.0929 - categorical_accuracy: 0.8518 - val_loss: 0.1176 - val_categorical_accuracy: 0.8154
+Epoch 19/30
+ - 52s - loss: 0.0901 - categorical_accuracy: 0.8524 - val_loss: 0.1168 - val_categorical_accuracy: 0.8241
+Epoch 20/30
+ - 52s - loss: 0.0899 - categorical_accuracy: 0.8511 - val_loss: 0.1179 - val_categorical_accuracy: 0.8147
+Epoch 21/30
+ - 52s - loss: 0.0884 - categorical_accuracy: 0.8568 - val_loss: 0.1193 - val_categorical_accuracy: 0.8169
+Epoch 22/30
+ - 52s - loss: 0.0874 - categorical_accuracy: 0.8566 - val_loss: 0.1173 - val_categorical_accuracy: 0.8219
+Epoch 23/30
+ - 53s - loss: 0.0860 - categorical_accuracy: 0.8613 - val_loss: 0.1191 - val_categorical_accuracy: 0.8154
+Epoch 24/30
+ - 52s - loss: 0.0847 - categorical_accuracy: 0.8584 - val_loss: 0.1220 - val_categorical_accuracy: 0.8198
+Epoch 25/30
+ - 53s - loss: 0.0837 - categorical_accuracy: 0.8660 - val_loss: 0.1218 - val_categorical_accuracy: 0.8096
+Epoch 26/30
+ - 52s - loss: 0.0831 - categorical_accuracy: 0.8657 - val_loss: 0.1194 - val_categorical_accuracy: 0.8161
+Epoch 27/30
+ - 52s - loss: 0.0806 - categorical_accuracy: 0.8717 - val_loss: 0.1211 - val_categorical_accuracy: 0.8023
+
+Epoch 00027: ReduceLROnPlateau reducing learning rate to 0.00010000000474974513.
+Epoch 28/30
+ - 52s - loss: 0.0757 - categorical_accuracy: 0.8669 - val_loss: 0.1199 - val_categorical_accuracy: 0.8060
+Epoch 29/30
+ - 53s - loss: 0.0720 - categorical_accuracy: 0.8791 - val_loss: 0.1211 - val_categorical_accuracy: 0.8110
+Epoch 30/30
+ - 53s - loss: 0.0728 - categorical_accuracy: 0.8777 - val_loss: 0.1211 - val_categorical_accuracy: 0.8110
+
+  32/1376 [..............................] - ETA: 1:39
+  96/1376 [=>............................] - ETA: 32s 
+ 160/1376 [==>...........................] - ETA: 19s
+ 224/1376 [===>..........................] - ETA: 13s
+ 288/1376 [=====>........................] - ETA: 10s
+ 352/1376 [======>.......................] - ETA: 8s 
+ 416/1376 [========>.....................] - ETA: 6s
+ 480/1376 [=========>....................] - ETA: 5s
+ 544/1376 [==========>...................] - ETA: 4s
+ 608/1376 [============>.................] - ETA: 3s
+ 672/1376 [=============>................] - ETA: 3s
+ 736/1376 [===============>..............] - ETA: 2s
+ 800/1376 [================>.............] - ETA: 2s
+ 864/1376 [=================>............] - ETA: 1s
+ 928/1376 [===================>..........] - ETA: 1s
+ 992/1376 [====================>.........] - ETA: 1s
+1056/1376 [======================>.......] - ETA: 1s
+1120/1376 [=======================>......] - ETA: 0s
+1184/1376 [========================>.....] - ETA: 0s
+1248/1376 [==========================>...] - ETA: 0s
+1312/1376 [===========================>..] - ETA: 0s
+1376/1376 [==============================] - 4s 3ms/step
+
+  32/1376 [..............................] - ETA: 1:40
+  96/1376 [=>............................] - ETA: 32s 
+ 160/1376 [==>...........................] - ETA: 19s
+ 224/1376 [===>..........................] - ETA: 13s
+ 288/1376 [=====>........................] - ETA: 10s
+ 352/1376 [======>.......................] - ETA: 8s 
+ 416/1376 [========>.....................] - ETA: 6s
+ 480/1376 [=========>....................] - ETA: 5s
+ 544/1376 [==========>...................] - ETA: 4s
+ 608/1376 [============>.................] - ETA: 3s
+ 672/1376 [=============>................] - ETA: 3s
+ 736/1376 [===============>..............] - ETA: 2s
+ 800/1376 [================>.............] - ETA: 2s
+ 864/1376 [=================>............] - ETA: 1s
+ 928/1376 [===================>..........] - ETA: 1s
+ 992/1376 [====================>.........] - ETA: 1s
+1056/1376 [======================>.......] - ETA: 1s
+1120/1376 [=======================>......] - ETA: 0s
+1184/1376 [========================>.....] - ETA: 0s
+1248/1376 [==========================>...] - ETA: 0s
+1312/1376 [===========================>..] - ETA: 0s
+1376/1376 [==============================] - 4s 3ms/step
+/appl/soft/ai/miniconda3/envs/tensorflow-1.14.0/lib/python3.7/site-packages/keras/callbacks.py:1065: UserWarning: `epsilon` argument is deprecated and will be removed, use `min_delta` instead.
+  warnings.warn('`epsilon` argument is deprecated and '
+
+Accuracy: 0.8277616279069767
+
+f1-score: 0.8024435524347538
+[0.9317269076305221, 0.8489208633093526, 0.8936170212765957, 0.7740112994350282, 0.6506024096385542, 0.7878787878787878, 0.9397590361445783, 0.7613293051359517, 0.6341463414634146]
+
+f1-score (custom): 0.7910713566075687
+[0.943089430894309, 0.8274894810659187, 0.8823529411764706, 0.7560706401766004, 0.6521739130434783, 0.7602339181286549, 0.9435483870967742, 0.738569753810082, 0.6161137440758294]
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Job ID: 1924508
+Cluster: puhti
+User/Group: rivesgam/rivesgam
+State: RUNNING
+Nodes: 1
+Cores per node: 10
+CPU Utilized: 02:43:46
+CPU Efficiency: 52.27% of 05:13:20 core-walltime
+Job Wall-clock time: 00:31:20
+Memory Utilized: 7.42 GB
+Memory Efficiency: 2.97% of 250.00 GB
+Job consumed 18.28 CSC billing units based on following used resources
+CPU BU: 5.22
+Mem BU: 13.06
+WARNING: Efficiency statistics may be misleading for RUNNING jobs.
